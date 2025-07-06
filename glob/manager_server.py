@@ -1709,7 +1709,7 @@ async def _confirm_try_install(sender, custom_node_url, msg):
         PromptServer.instance.send_sync("cm-api-try-install-customnode",
                                         {"sender": sender, "target": target, "msg": msg})
     else:
-        logging.error(f"[ComfyUI Manager API] Failed to try install - Unknown custom node url '{custom_node_url}'")
+        logging.error(f"[ComfyUI Manager for Shared Environment (AICU Edition) API] Failed to try install - Unknown custom node url '{custom_node_url}'")
 
 
 def confirm_try_install(sender, custom_node_url, msg):
@@ -1770,7 +1770,7 @@ if not os.path.exists(core.manager_config_path):
 
 cm_global.register_extension('ComfyUI-Manager',
                              {'version': core.version,
-                                 'name': 'ComfyUI Manager',
+                                 'name': 'ComfyUI Manager for Shared Environment (AICU Edition)',
                                  'nodes': {},
                                  'description': 'This extension provides the ability to manage custom nodes in ComfyUI.', })
 

@@ -237,7 +237,7 @@ def generate_cnr_id(fullpath, cnr_id):
             with open(cnr_id_path, "w") as f:
                 return f.write(cnr_id)
     except:
-        print(f"[ComfyUI Manager] unable to create file: {cnr_id_path}")
+        print(f"[ComfyUI Manager for Shared Environment (AICU Edition)] unable to create file: {cnr_id_path}")
 
 
 def read_cnr_id(fullpath):

@@ -2,14 +2,14 @@
 
 **ComfyUI-Manager** は [ComfyUI](https://github.com/comfyanonymous/ComfyUI)の使い勝手を高めるための拡張機能です。ComfyUIにおけるカスタムノードの **インストール / 削除 / 無効化 / 有効化** を行う機能を提供します。さらにComfyUI内の情報へのアクセスを便利にするハブ機能や便利機能も提供します。
 
-![menu](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/refs/heads/Main/ComfyUI-Manager/images/dialog.jpg)
+![menu](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/dialog.jpg)
 
 ## NOTICE
 * V3.16: `uv` のサポートが追加されました。`config.ini` で `use_uv` を設定してください。
 * V3.10: `ダブルクリック機能` は削除されました。
   * この機能は https://github.com/ltdrdata/comfyui-connection-helper に移動しました。
 * V3.3.2: 大幅に刷新されました。公式に [https://registry.comfy.org/](https://registry.comfy.org/) をサポートします。
-* 全てのノード情報は [ComfyUI Nodes Info](https://ltdrdata.io/) ページで確���できます。
+* 全てのノード情報は [ComfyUI Nodes Info](https://aicuai.github.io/) ページで確認できます。
 
 ## インストール
 
@@ -18,7 +18,7 @@
 既存の ComfyUI に加えて ComfyUI-Manager をインストールするには、以下の手順に従ってください。
 
 1. ターミナル（またはコマンドプロンプト）で `ComfyUI/custom_nodes` ディレクトリに移動します。
-2. `git clone https://github.com/ltdrdata/ComfyUI-Manager comfyui-manager` を実行します。
+2. `git clone https://github.com/aicuai/ComfyUI-Manager-AICU comfyui-manager` を実行します。
 3. ComfyUI を再起動します。
 
 
@@ -27,11 +27,11 @@
 - https://git-scm.com/download/win
 - スタンドアロン版
 - オプション: `use windows default console window` を選択
-2. [scripts/install-manager-for-portable-version.bat](https://github.com/ltdrdata/ComfyUI-Manager/raw/main/scripts/install-manager-for-portable-version.bat) をインストール済みの `"ComfyUI_windows_portable"` ディレクトリにダウンロードします。
-- クリックしないでください。リンクを右クリックして「名前を付���て保存...」を使用してください。
+2. [scripts/install-manager-for-portable-version.bat](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/scripts/install-manager-for-portable-version.bat) をインストール済みの `"ComfyUI_windows_portable"` ディレクトリにダウンロードします���
+- クリックしないでください。リンクを右クリックして「名前を付けて保存...」を使用してください。
 3. `install-manager-for-portable-version.bat` バッチファイルをダブルクリックします。
 
-![portable-install](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/portable-install.jpg)
+![portable-install](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/portable-install.jpg)
 
 
 ### インストール[方法3] (comfy-cli を介したインストール: ComfyUI と ComfyUI-Manager を一度にインストール)
@@ -62,7 +62,7 @@ comfy install
 venv 環境を使用して Linux に ComfyUI と ComfyUI-Manager をインストールするには、以下の手順に従ってください。
 * **前提条件: python-is-python3, python3-venv, git**
 
-1. [scripts/install-comfyui-venv-linux.sh](https://github.com/ltdrdata/ComfyUI-Manager/raw/main/scripts/install-comfyui-venv-linux.sh) を空のインストールディレクトリにダウンロードします。
+1. [scripts/install-comfyui-venv-linux.sh](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/scripts/install-comfyui-venv-linux.sh) を空のインストールディレクトリにダウンロードします。
 - クリックしないでください。リンクを右クリックして「名前を付けて保存...」を使用してください。
 - ComfyUI は指定されたディレクトリのサブディレクトリにインストールされ、そのディレクトリには生成された実行可能スクリプトが含まれます。
 2. `chmod +x install-comfyui-venv-linux.sh` を実行します。
@@ -71,8 +71,8 @@ venv 環境を使用して Linux に ComfyUI と ComfyUI-Manager をインスト
 ### インストール時の注意点
 * **DO**: `ComfyUI-Manager` のファイルは、`ComfyUI/custom_nodes/comfyui-manager` のパスに正確に配置されている必要があります。
   * 圧縮ファイル形式でのインストールは推奨されません。
-* **DON'T**: `ComfyUI/custom_nodes` の場所に直接解凍しないでください。`__init__.py` など、Managerのファイルがそのディレクトリに直接配置されてしまいます。
-  * `ComfyUI/custom_nodes` から���べての ComfyUI-Manager ファイルを削除する必要があります。
+* **DON'T**: `ComfyUI/custom_nodes` の場所に直接解凍しないでください。`__init__.py` など、Managerのファイルがそのディレク���リに直接配置されてしまいます。
+  * `ComfyUI/custom_nodes` からすべての ComfyUI-Manager ファイルを削除する必要があります。
 * **DON'T**: `ComfyUI/custom_nodes/ComfyUI-Manager/ComfyUI-Manager` のようなパスに解凍しないでください。
 * **DON'T**: `ComfyUI/custom_nodes/ComfyUI-Manager-main` のようなパスに解凍しないでください。
   * このような場合、`ComfyUI-Manager` は動作するかもしれませんが、`ComfyUI-Manager` 内で認識されず、更新を実行できません。また、重複インストールのリスクもあります。削除して `git clone` メソッドで適切にインストールしてください。
@@ -81,7 +81,7 @@ venv 環境を使用して Linux に ComfyUI と ComfyUI-Manager をインスト
 システム構成に応じて、`./run_gpu.sh` または `./run_cpu.sh` を実行して ComfyUI を起動できます。
 
 ## Colab Notebook
-このリポジトリは、ComfyUI-Manager を含む ComfyUI をインストールして使用できる Colab ノートブックを提供します。ComfyUI を使用するには、[このリンクをクリックしてください](https://colab.research.google.com/github/ltdrdata/ComfyUI-Manager/blob/main/notebooks/comfyui_colab_with_manager.ipynb)。
+このリポジトリは、ComfyUI-Manager を含む ComfyUI をインストールして使用できる Colab ノートブックを提供します。ComfyUI を使用するには、[このリンクをクリックしてください](https://colab.research.google.com/github/aicuai/ComfyUI-Manager-AICU/blob/main/notebooks/comfyui_colab_with_manager.ipynb)。
 * ComfyUI のインストールをサポート
 * ComfyUI-Manager の基本的なインストールをサポート
 * Colab ノートブックの再起動時にカスタムノードの依存関係を自動的にインストールする機能をサポート
@@ -91,16 +91,16 @@ venv 環境を使用して Linux に ComfyUI と ComfyUI-Manager をインスト
 
 1. メインメニューの「Manager」ボタンをクリックします。
 
-    ![mainmenu](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/topbar.jpg)
+    ![mainmenu](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/topbar.jpg)
 
 
 2. 「Install Custom Nodes」または「Install Models」をクリックすると、インストーラーダイアログが開きます。
 
-    ![menu](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/refs/heads/Main/ComfyUI-Manager/images/dialog.jpg)
+    ![menu](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/dialog.jpg)
 
     * 3つのDBモードがあります: `DB: Channel (1day cache)`, `DB: Local`, `DB: Channel (remote)`。
       * `Channel (1day cache)` は、1日有効なキャッシュ情報を使用し、リストを素早く表示します。
-        * この情報は、キャッシュがない場合、キャッシュの有効期限が切れた場合、またはチャンネル（リモート）を介して外部情報が取得された場合に更新されます��
+        * この情報は、キャッシュがない場合、キャッシュの有効期限が切れた場合、またはチャンネル（リモート）を介して外部情報が取得された場���に更新されます。
         * ComfyUI を新たに起動するたびに、このモードが常に**デフォルト**モードとして設定されます。
       * `Local` は、ComfyUI-Manager にローカルに保存されている情報を使用します。
         * この情報は、ComfyUI-Manager を更新した場合にのみ更新されます。
@@ -112,9 +112,9 @@ venv 環境を使用して Linux に ComfyUI と ComfyUI-Manager をインスト
 
 3. 「Install」または「Try Install」ボタンをクリックします。
 
-    ![node-install-dialog](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/custom-nodes.jpg)
+    ![node-install-dialog](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/custom-nodes.jpg)
 
-    ![model-install-dialog](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/models.jpg)
+    ![model-install-dialog](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/models.jpg)
 
     * Installed: この項目はすでにインストールされています。
     * Install: このボタンをクリックすると、項目がインストールされます。
@@ -122,17 +122,17 @@ venv 環境を使用して Linux に ComfyUI と ComfyUI-Manager をインスト
 
     * 上部に赤い背景の `Channel` インジケーターが表示されている場合、それはデフォルトチャンネルではないことを意味します。保持されている情報量がデフォルトチャンネルとは異なるため、このチャンネル状態では多くのカスタムノードが表示されない場合があります。
       * チャンネル設定は、ノードリストだけでなく、「Update all」のようなすべての機能に広範な影響を与えます。
-    * 黄色い背景の Conflicted Nodes は、それぞれの拡張機能で他の拡張��能と競合しているノードのリストを表示します。この問題は開発者によって対処される必要があり、ユーザーはこれらの競合により一部のノードが正しく機能しない可能性があり、それに応じてインストールする必要があることに注意してください。
+    * 黄色い背景の Conflicted Nodes は、それぞれの拡張機能で他の拡張機能と競合しているノードのリストを表示します。この問題は開発者によって対処される必要があり、ユーザーはこれらの競合により一部のノードが正しく機能しない可能性があり、それに応じてインストールする必要があることに注意してください。
 
 4. 共有
-  ![menu](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/topbar.jpg) ![share](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/share.jpg)
+  ![menu](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/topbar.jpg) ![share](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/share.jpg)
 
   * メインメニュー下部の共有ボタンをクリックするか、Imageノードのコンテキストメニューにある「Share Output」を選択することで、ワークフローを共有できます。
   * 現在、[https://comfyworkflows.com/](https://comfyworkflows.com/)、[https://openart.ai](https://openart.ai/workflows/dev)、[https://youml.com](https://youml.com) を介した共有、および Matrix チャンネルを介した共有をサポートしています。
 
-  ![menu](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/share-setting.jpg)
+  ![menu](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/share-setting.jpg)
 
-  * Manager メニューの共有設定から、メインメニューの共有ボタンまたはコンテキストメニューの共有出力ボタンの動作を設定できます。
+  * Manager メニューの共有設定から、メインメ���ューの共有ボタンまたはコンテキストメニューの共有出力ボタンの動作を設定できます。
     * `None`: メインメニューから非表示
     * `All`: ユーザーが共有するタイトルを選択できるダイアログを表示
 
@@ -162,19 +162,19 @@ venv 環境を使用して Linux に ComfyUI と ComfyUI-Manager をインスト
 
 
 ## スナップショットマネージャー
-* 「Save snapshot」を押すか、「Manager Menu」で「Update All」を使用すると、現在のイ���ストール状態のスナップショットが保存されます。
-  * スナップショットファイルディレクトリ: `<USER_DIRECTORY>/default/ComfyUI-Manager/snapshots`
+* 「Save snapshot」を押すか、「Manager Menu」で「Update All」を使用すると、現在のインストール状態のスナップショットが保存されます。
+  * スナップショッ��ファイルディレクトリ: `<USER_DIRECTORY>/default/ComfyUI-Manager/snapshots`
   * スナップショットファイルの名前を変更できます。
 * 「Restore」ボタンを押すと、それぞれのスナップショットのインストール状態に戻すことができます。
   * ただし、Git で管理されていないカスタムノードの場合、スナップショットのサポートは不完全です。
 * 「Restore」を押すと、次回の ComfyUI 起動時に有効になります。
   * 選択されたスナップショットファイルは `<USER_DIRECTORY>/default/ComfyUI-Manager/startup-scripts/restore-snapshot.json` に保存され、ComfyUI の再起動時にスナップショットが適用されてから削除されます。
 
-![model-install-dialog](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/snapshot.jpg)
+![model-install-dialog](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/snapshot.jpg)
 
 
 ## cm-cli: パワーユーザー向けコマンドラインツール
-* ComfyUI を実行せずに ComfyUI-Manager の機能を使用で���るツールが提供されています。
+* ComfyUI を実行せずに ComfyUI-Manager の機能を使用できるツールが提供されています。
 * 詳細については、[cm-cli ドキュメント](docs/en/cm-cli.md) を参照してください。
 
 
@@ -204,8 +204,8 @@ venv 環境を使用して Linux に ComfyUI と ComfyUI-Manager をインスト
 
 ## コンポーネント共有
 * **コピー＆ペースト**
-  * [デモページ](https://ltdrdata.github.io/component-demo/)
-  * クリップボードからコンポーネントを貼り付ける場合、以下の JSON 形式のテキストをサポートします。(text/plain)
+  * [デモページ](https://aicuai.github.io/component-demo/)
+  * クリップボードから���ンポーネントを貼り付ける場合、以下の JSON 形式のテキストをサポートします。(text/plain)
     ```
     {
       "kind": "ComfyUI Components",
@@ -220,8 +220,8 @@ venv 環境を使用して Linux に ComfyUI と ComfyUI-Manager をインスト
     * "components" は、`<USER_DIRECTORY>/default/ComfyUI-Manager/components` に保存されているファイルのコンテンツと同じ構造である必要があります。
       * `<コンポーネント名>`: 名前は `<prefix>::<node name>` の形式である必要があります。
         * `<コンポーネントノードデータ>`: グループノードのノードデータ内。
-          * `<version>`: `major.minor.patch` また��� `major.minor` の2つの形式のみが許可されます。(例: `1.0`, `2.2.1`)
-          * `<datetime>`: 保存時間
+          * `<version>`: `major.minor.patch` または `major.minor` の2つの形式のみが許可されます。(例: `1.0`, `2.2.1`)
+          * `<datetime>`: 保��時間
           * `<packname>`: packname が空でない場合、カテゴリは `packname/workflow` となり、`<USER_DIRECTORY>/default/ComfyUI-Manager/components` の `<packname>.pack` ファイルに保存されます。
           * `<category>`: カテゴリも packname もない場合、components カテゴリに保存されます。
           ```
@@ -239,24 +239,24 @@ venv 環境を使用して Linux に ComfyUI と ComfyUI-Manager をインスト
 
 ## 不足ノードのインストールサポート
 
-![missing-menu](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/missing-menu.jpg)
+![missing-menu](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/missing-menu.jpg)
 
 * メニューの「Install Missing Custom Nodes」ボタンをクリックすると、現在ワークフローに存在しないノードを含む拡張ノードのリストが表示されます。
 
-![missing-list](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/missing-list.jpg)
+![missing-list](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/missing-list.jpg)
 
 
 # 設定
 * `config.ini` ファイルを修正して、ComfyUI-Manager の設定を適用できます。
     * ComfyUI-Manager が使用する `config.ini` へのパスは、起動ログメッセージに表示されます。
-    * 参照: [https://github.com/ltdrdata/ComfyUI-Manager#paths]
+    * 参照: [https://github.com/aicuai/ComfyUI-Manager-AICU#paths]
 * 設定オプション:
     ```
     [default]
     git_exe = <git 実行可能ファイルへのパスを手動で指定します。空の場合、デフォルトの git 実行可能パスが使用されます。>
     use_uv = <依存関係のインストールに pip の代わりに uv を使用します。>
-    default_cache_as_channel_url = <���動時に channel_url として指定された DB を取得するかどうかを決定します。>
-    bypass_ssl = <SSL エラーが発生した場合に SSL を無効にするには True に設定します。>
+    default_cache_as_channel_url = <起動時に channel_url として指定された DB を取得するかどうかを決定します。>
+    bypass_ssl = <SSL エラーが発生した場合に SSL ���無効にするには True に設定します。>
     file_logging = <ComfyUI-Manager が使用するログファイルを作成するかどうかを設定します。>
     windows_selector_event_loop_policy = <Windows でイベントループエラーが発生した場合、これを True に設定します。>
     model_download_by_agent = <モデルをダウンロードする際に、torchvision_download_url の代わりにエージェントを使用します。>
@@ -305,7 +305,7 @@ venv 環境を使用して Linux に ComfyUI と ComfyUI-Manager をインスト
   * `pip_blacklist.list` ファイルにパッケージ名を1行に1つずつリストします。
 
 * pip インストールの自動復元
- * `pip_auto_fix.list` に `requirements.txt` と同様に pip の要件をリストすると、ComfyUI の起動時や、様々なカスタムノードのインストール中にバージョンが不一致になった場合に、指定されたバージョンに自動的に��元されます。
+ * `pip_auto_fix.list` に `requirements.txt` と同様に pip の要件をリストすると、ComfyUI の起動時や、様々なカスタムノードのインストール中にバージョンが不一致になった場合に、指定されたバージョンに自動的に復元されます。
  * `--index-url` を使用できます。
 
 * `aria2` をダウンローダーとして使用
@@ -322,7 +322,7 @@ venv 環境を使用して Linux に ComfyUI と ComfyUI-Manager をインスト
 
 
 ### 例1:
-`https://github.com/ltdrdata/ComfyUI-Impact-Pack` を `https://mirror.ghproxy.com/https://github.com/ltdrdata/ComfyUI-Impact-Pack` にリダイレクトする
+`https://github.com/aicuai/ComfyUI-Impact-Pack` を `https://mirror.ghproxy.com/https://github.com/aicuai/ComfyUI-Impact-Pack` にリダイレクトする
 
 ```
 GITHUB_ENDPOINT=https://mirror.ghproxy.com/https://github.com
@@ -339,7 +339,7 @@ HF_ENDPOINT=https://some-hf-mirror.com
 `scan.sh` スクリプトを実行すると:
 
 * `extension-node-map.json` が更新されます。
-  * これを行うには、`custom-node-list.json` にリストされているカスタムノー���を `~/.tmp/default` にプルまたはクローンします。
+  * これを行うには、`custom-node-list.json` にリストされているカスタムノードを `~/.tmp/default` にプルまたはクローンします。
   * このステップをスキップするには、`--skip-update` オプションを追加します。
   * `~/.tmp/default` 以外のパスを指定したい場合は、`scan.sh` の代わりに `python scanner.py [path]` を直接実行します。
 
@@ -352,7 +352,7 @@ HF_ENDPOINT=https://some-hf-mirror.com
 
 ## トラブルシューティング
 * `git.exe` がシステム git 以外の特定の場所にインストールされている場合、ComfyUI-Manager をインストールして ComfyUI を実行してください。その後、生成される `<USER_DIRECTORY>/default/ComfyUI-Manager/config.ini` ファイルの `git_exe =` の箇所にファイル名を含めたパスを指定してください。
-* ComfyUI-Manager 自体の更新に失敗した場合、**ComfyUI-Manager** ディレクトリに移動し、`git update-ref refs/remotes/origin/main a361cc1 && git fetch --all && git pull` コマンドを実行してください。
+* ComfyUI Manager for Shared Environment (AICU Edition) 自体の更新に失敗した場合、**ComfyUI Manager for Shared Environment (AICU Edition)** ディレクトリに移動し、`git update-ref refs/remotes/origin/main a361cc1 && git fetch --all && git pull` コマンドを実行してください。
 * Windows で `Overlapped Object has pending operation at deallocation on Comfyui Manager load` エラーが発生した場合
   * `config.ini` ファイルを編集: `windows_selector_event_loop_policy = True` を追加します。
 * `SSL: CERTIFICATE_VERIFY_FAILED` エラーが発生した場合。
@@ -367,7 +367,7 @@ HF_ENDPOINT=https://some-hf-mirror.com
       * `high` レベルのリスクのある機能は許可されません。
       * `middle` レベルのリスクのある機能は利用可能です。
     * `normal-`
-      * `--listen` が指定されており、`127.` で始まらな��場合、`high` レベルのリスクのある機能は許可されません。
+      * `--listen` が指定されており、`127.` で始まらない場合、`high` レベルのリスクのある機能は許可されません。
       * `middle` レベルのリスクのある機能は利用可能です。
     * `weak`
       * すべての機能が利用可能です。

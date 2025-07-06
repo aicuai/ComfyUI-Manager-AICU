@@ -1173,7 +1173,7 @@ class ManagerMenuDialog extends ComfyDialog {
 								},
 								window
 							);
-							// set the id so that we can override the context menu's z-index to be above the comfyui manager menu
+							// set the id so that we can override the context menu's z-index to be above the ComfyUI Manager for Shared Environment (AICU Edition) menu
 							menu.root.id = "cm-manual-button-menu";
 							menu.root.classList.add("pysssss-workflow-popup-2");
 						},
@@ -1381,7 +1381,7 @@ class ManagerMenuDialog extends ComfyDialog {
 			},
 			window
 		);
-		// set the id so that we can override the context menu's z-index to be above the comfyui manager menu
+		// set the id so that we can override the context menu's z-index to be above the ComfyUI Manager for Shared Environment (AICU Edition) menu
 		menu.root.id = "workflowgallery-button-menu";
 		menu.root.classList.add("pysssss-workflow-popup-2");
 	}
@@ -1471,7 +1471,7 @@ app.registerExtension({
 							setManagerInstance(new ManagerMenuDialog());
 						manager_instance.show();
 					},
-					tooltip: "ComfyUI Manager",
+					tooltip: "ComfyUI Manager for Shared Environment (AICU Edition)",
 					content: "Manager",
 					classList: "comfyui-button comfyui-menu-mobile-collapse primary"
 				}).element,

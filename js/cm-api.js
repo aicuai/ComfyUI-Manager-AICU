@@ -3,7 +3,9 @@ import { app } from "../../scripts/app.js";
 import { sleep, customConfirm, customAlert } from "./common.js";
 
 async function tryInstallCustomNode(event) {
-	let msg = '-= [ComfyUI Manager] extension installation request =-\n\n';
+	let msg = '-= [ComfyUI Manager for Shared Environment (AICU Edition)] extension installation request =-
+
+';
 	msg += `The '${event.detail.sender}' extension requires the installation of the '${event.detail.target.title}' extension. `;
 
 	if(event.detail.target.installed == 'Disabled') {

@@ -1826,7 +1826,7 @@ def switch_to_default_branch(repo):
                     except:
                         pass
 
-    print("[ComfyUI Manager] Failed to switch to the default branch")
+    print("[ComfyUI Manager for Shared Environment (AICU Edition)] Failed to switch to the default branch")
     return False
 
 
