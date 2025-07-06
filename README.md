@@ -1,4 +1,4 @@
-# ComfyUI Manager
+# ComfyUI Manager for Shared Environment (AICU Edition)
 
 **ComfyUI-Manager** is an extension designed to enhance the usability of [ComfyUI](https://github.com/comfyanonymous/ComfyUI). It offers management functions to **install, remove, disable, and enable** various custom nodes of ComfyUI. Furthermore, this extension provides a hub feature and convenience functions to access a wide range of information within ComfyUI.
 

@@ -1,4 +1,4 @@
-# ComfyUI Manager 日本語訳
+# ComfyUI Manager for Shared Environment (AICU Edition) 日本語訳
 
 **ComfyUI-Manager** は [ComfyUI](https://github.com/comfyanonymous/ComfyUI)の使い勝手を高めるための拡張機能です。ComfyUIにおけるカスタムノードの **インストール / 削除 / 無効化 / 有効化** を行う機能を提供します。さらにComfyUI内の情報へのアクセスを便利にするハブ機能や便利機能も提供します。
 
