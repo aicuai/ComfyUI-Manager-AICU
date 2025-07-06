@@ -1758,7 +1758,7 @@ def read_config():
             'downgrade_blacklist': '',
             'always_lazy_install': False,
             'network_mode': 'public',   # public | private | offline
-            'security_level': 'normal', # strong | normal | normal- | weak
+            'security_level': 'strong', # strong | normal | normal- | weak
             'db_mode': 'cache',         # local | cache | remote
         }
 
