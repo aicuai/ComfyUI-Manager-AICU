@@ -2,14 +2,14 @@
 
 **ComfyUI-Manager** is an extension designed to enhance the usability of [ComfyUI](https://github.com/comfyanonymous/ComfyUI). It offers management functions to **install, remove, disable, and enable** various custom nodes of ComfyUI. Furthermore, this extension provides a hub feature and convenience functions to access a wide range of information within ComfyUI.
 
-![menu](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/refs/heads/Main/ComfyUI-Manager/images/dialog.jpg)
+![menu](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/dialog.jpg)
 
 ## NOTICE
 * V3.16: Support for `uv` has been added. Set `use_uv` in `config.ini`.
 * V3.10: `double-click feature` is removed
   * This feature has been moved to https://github.com/ltdrdata/comfyui-connection-helper
 * V3.3.2: Overhauled. Officially supports [https://registry.comfy.org/](https://registry.comfy.org/).
-* You can see whole nodes info on [ComfyUI Nodes Info](https://ltdrdata.github.io/) page.
+* You can see whole nodes info on [ComfyUI Nodes Info](https://aicuai.github.io/) page.
 
 ## Installation
 
@@ -18,7 +18,7 @@
 To install ComfyUI-Manager in addition to an existing installation of ComfyUI, you can follow the following steps:
 
 1. goto `ComfyUI/custom_nodes` dir in terminal(cmd)
-2. `git clone https://github.com/ltdrdata/ComfyUI-Manager comfyui-manager`
+2. `git clone https://github.com/aicuai/ComfyUI-Manager-AICU comfyui-manager`
 3. Restart ComfyUI
 
 
@@ -27,11 +27,11 @@ To install ComfyUI-Manager in addition to an existing installation of ComfyUI, y
 - https://git-scm.com/download/win
 - standalone version  
 - select option: use windows default console window
-2. Download [scripts/install-manager-for-portable-version.bat](https://github.com/ltdrdata/ComfyUI-Manager/raw/main/scripts/install-manager-for-portable-version.bat) into installed `"ComfyUI_windows_portable"` directory
+2. Download [scripts/install-manager-for-portable-version.bat](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/scripts/install-manager-for-portable-version.bat) into installed `"ComfyUI_windows_portable"` directory
 - Don't click. Right click the link and use save as...
 3. double click `install-manager-for-portable-version.bat` batch file
 
-![portable-install](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/portable-install.jpg)
+![portable-install](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/portable-install.jpg)
 
 
 ### Installation[method3] (Installation through comfy-cli: install ComfyUI and ComfyUI-Manager at once.)  
@@ -62,7 +62,7 @@ comfy install
 To install ComfyUI with ComfyUI-Manager on Linux using a venv environment, you can follow these steps:
 * **prerequisite: python-is-python3, python3-venv, git**
 
-1. Download [scripts/install-comfyui-venv-linux.sh](https://github.com/ltdrdata/ComfyUI-Manager/raw/main/scripts/install-comfyui-venv-linux.sh) into empty install directory
+1. Download [scripts/install-comfyui-venv-linux.sh](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/scripts/install-comfyui-venv-linux.sh) into empty install directory
 - Don't click. Right click the link and use save as...
 - ComfyUI will be installed in the subdirectory of the specified directory, and the directory will contain the generated executable script.
 2. `chmod +x install-comfyui-venv-linux.sh`
@@ -81,7 +81,7 @@ To install ComfyUI with ComfyUI-Manager on Linux using a venv environment, you c
 You can execute ComfyUI by running either `./run_gpu.sh` or `./run_cpu.sh` depending on your system configuration.
 
 ## Colab Notebook
-This repository provides Colab notebooks that allow you to install and use ComfyUI, including ComfyUI-Manager. To use ComfyUI, [click on this link](https://colab.research.google.com/github/ltdrdata/ComfyUI-Manager/blob/main/notebooks/comfyui_colab_with_manager.ipynb).
+This repository provides Colab notebooks that allow you to install and use ComfyUI, including ComfyUI-Manager. To use ComfyUI, [click on this link](https://colab.research.google.com/github/aicuai/ComfyUI-Manager-AICU/blob/main/notebooks/comfyui_colab_with_manager.ipynb).
 * Support for installing ComfyUI
 * Support for basic installation of ComfyUI-Manager
 * Support for automatically installing dependencies of custom nodes upon restarting Colab notebooks.
@@ -91,12 +91,12 @@ This repository provides Colab notebooks that allow you to install and use Comfy
 
 1. Click "Manager" button on main menu
 
-    ![mainmenu](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/topbar.jpg)
+    ![mainmenu](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/topbar.jpg)
 
 
 2. If you click on 'Install Custom Nodes' or 'Install Models', an installer dialog will open.
 
-    ![menu](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/refs/heads/Main/ComfyUI-Manager/images/dialog.jpg)
+    ![menu](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/dialog.jpg)
 
     * There are three DB modes: `DB: Channel (1day cache)`, `DB: Local`, and `DB: Channel (remote)`. 
       * `Channel (1day cache)` utilizes Channel cache information with a validity period of one day to quickly display the list.
@@ -112,9 +112,9 @@ This repository provides Colab notebooks that allow you to install and use Comfy
 
 3. Click 'Install' or 'Try Install' button.
 
-    ![node-install-dialog](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/custom-nodes.jpg)
+    ![node-install-dialog](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/custom-nodes.jpg)
 
-    ![model-install-dialog](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/models.jpg)
+    ![model-install-dialog](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/models.jpg)
 
     * Installed: This item is already installed.
     * Install: Clicking this button will install the item.
@@ -125,14 +125,14 @@ This repository provides Colab notebooks that allow you to install and use Comfy
     * Conflicted Nodes with a yellow background show a list of nodes conflicting with other extensions in the respective extension. This issue needs to be addressed by the developer, and users should be aware that due to these conflicts, some nodes may not function correctly and may need to be installed accordingly.
 
 4. Share
-  ![menu](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/topbar.jpg) ![share](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/share.jpg) 
+  ![menu](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/topbar.jpg) ![share](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/share.jpg) 
 
   * You can share the workflow by clicking the Share button at the bottom of the main menu or selecting Share Output from the Context Menu of the Image node.
   * Currently, it supports sharing via [https://comfyworkflows.com/](https://comfyworkflows.com/),
     [https://openart.ai](https://openart.ai/workflows/dev), [https://youml.com](https://youml.com) 
     as well as through the Matrix channel.
 
-  ![menu](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/share-setting.jpg)
+  ![menu](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/share-setting.jpg)
   
   * Through the Share settings in the Manager menu, you can configure the behavior of the Share button in the Main menu or Share Output button on Context Menu.
     * `None`: hide from Main menu
@@ -173,7 +173,7 @@ The following settings are applied based on the section marked as `is_default`.
 * When you press `Restore`, it will take effect on the next ComfyUI startup.
   * The selected snapshot file is saved in `<USER_DIRECTORY>/default/ComfyUI-Manager/startup-scripts/restore-snapshot.json`, and upon restarting ComfyUI, the snapshot is applied and then deleted.
 
-![model-install-dialog](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/snapshot.jpg)
+![model-install-dialog](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/snapshot.jpg)
 
 
 ## cm-cli: command line tools for power user
@@ -207,7 +207,7 @@ The following settings are applied based on the section marked as `is_default`.
 
 ## Component Sharing
 * **Copy & Paste**
-  * [Demo Page](https://ltdrdata.github.io/component-demo/)
+  * [Demo Page](https://aicuai.github.io/component-demo/)
   * When pasting a component from the clipboard, it supports text in the following JSON format. (text/plain)
     ```
     {
@@ -242,17 +242,17 @@ The following settings are applied based on the section marked as `is_default`.
 
 ## Support of missing nodes installation
 
-![missing-menu](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/missing-menu.jpg)
+![missing-menu](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/missing-menu.jpg)
 
 * When you click on the ```Install Missing Custom Nodes``` button in the menu, it displays a list of extension nodes that contain nodes not currently present in the workflow.
 
-![missing-list](https://raw.githubusercontent.com/ltdrdata/ComfyUI-extension-tutorials/Main/ComfyUI-Manager/images/missing-list.jpg)
+![missing-list](https://raw.githubusercontent.com/aicuai/ComfyUI-Manager-AICU/main/images/missing-list.jpg)
 
 
 # Config
 * You can modify the `config.ini` file to apply the settings for ComfyUI-Manager.
     * The path to the `config.ini` used by ComfyUI-Manager is displayed in the startup log messages.
-    * See also: [https://github.com/ltdrdata/ComfyUI-Manager#paths]
+    * See also: [https://github.com/aicuai/ComfyUI-Manager-AICU#paths]
 * Configuration options:
     ```
     [default]
@@ -325,7 +325,7 @@ The following features can be configured using environment variables:
 
 
 ### Example 1:
-Redirecting `https://github.com/ltdrdata/ComfyUI-Impact-Pack` to `https://mirror.ghproxy.com/https://github.com/ltdrdata/ComfyUI-Impact-Pack`
+Redirecting `https://github.com/aicuai/ComfyUI-Impact-Pack` to `https://mirror.ghproxy.com/https://github.com/aicuai/ComfyUI-Impact-Pack`
 
 ```
 GITHUB_ENDPOINT=https://mirror.ghproxy.com/https://github.com

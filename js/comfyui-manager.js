@@ -235,7 +235,7 @@ let share_option = 'all';
 var is_updating = false;
 
 
-// copied style from https://github.com/pythongosssss/ComfyUI-Custom-Scripts
+// ComfyUI Manager for Shared Environment (AICU Edition)
 const style = `
 #workflowgallery-button {
 	width: 310px;
@@ -1250,7 +1250,7 @@ class ManagerMenuDialog extends ComfyDialog {
 				$el("div.comfy-modal-content",
 					[
 						$el("tr.cm-title", {}, [
-								$el("font", {size:6, color:"white"}, [`ComfyUI Manager ${manager_version}`])]
+								$el("font", {size:6, color:"white"}, [`ComfyUI Manager for Shared Environment (AICU Edition) ${manager_version}`])]
 							),
 						$el("br", {}, []),
 						$el("div.cm-menu-container",
@@ -1393,12 +1393,12 @@ async function getVersion() {
 }
 
 app.registerExtension({
-	name: "Comfy.ManagerMenu",
+	name: "Comfy.ManagerMenuAICU", // ComfyUI Manager for Shared Environment (AICU Edition)
 
-	aboutPageBadges: [
+			aboutPageBadges: [
 		{
-			label: `ComfyUI-Manager ${manager_version}`,
-			url: 'https://github.com/ltdrdata/ComfyUI-Manager',
+			label: `ComfyUI Manager for Shared Environment (AICU Edition) ${manager_version}`,
+			url: 'https://github.com/aicuai/ComfyUI-Manager-AICU',
 			icon: 'pi pi-th-large'
 		}
 	],
