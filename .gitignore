@@ -18,3 +18,4 @@ pip_overrides.json
 *.json
 check2.sh
 /venv/
+.DS_Store
